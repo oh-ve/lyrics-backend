@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 const PORT = process.env.PORT || 8080;
 
-app.cors(cors());
+app.use(cors());
 
 const connectDB = require("./dbinit.js");
 connectDB();
