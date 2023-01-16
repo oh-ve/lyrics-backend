@@ -9,7 +9,7 @@ const connectDB = require("./dbinit.js");
 connectDB();
 
 app.get("/", (req, res) => {
-  res.send("WELCOME TO MY STUPID API");
+  res.send("Lyrics database");
 });
 
 app.listen(PORT, () => {
